@@ -1,5 +1,5 @@
 dev:
-	gcc -Wall main.c -o bin
-	./bin
+	gcc -Wall *.c -o learnc
+	./learnc
 
 .PHONY: dev
