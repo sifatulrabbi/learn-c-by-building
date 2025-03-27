@@ -16,3 +16,7 @@ void swapints(int *a, int *b) {
 	int c = *a;
 	*a = *b, *b = c;
 };
+
+void print_line_break() {
+	printf("-------------------------------------------------\n");
+};

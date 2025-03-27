@@ -1,5 +1,6 @@
 #include "list_sorting.h"
 #include "utils.h"
+#include "working_with_files.h"
 #include <stdio.h>
 
 int main() {
@@ -16,6 +17,9 @@ int main() {
 	printf("after:");
 	print_arr(myarr, myarr_size);
 	printf("\n");
+	print_line_break();
+
+	open_read_print("input.txt");
 
 	return 0;
 };
