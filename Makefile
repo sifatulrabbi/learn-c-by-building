@@ -1,9 +1,5 @@
-dev:
-	gcc -Wall *.c -o learnc
-	./learnc
+run:
+	gcc -Wall *.c -o learnc.bin
+	./learnc.bin
 
-text_search:
-	gcc -Wall ./projects/cli_text_search/*.c -o text_search
-	./text_search
-
-.PHONY: dev, text_search
+.PHONY: run
