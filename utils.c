@@ -11,3 +11,8 @@ void print_arr(int *arr, int len) {
 	}
 	printf("]");
 };
+
+void swapints(int *a, int *b) {
+	int c = *a;
+	*a = *b, *b = c;
+};

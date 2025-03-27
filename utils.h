@@ -1,3 +1,7 @@
 #ifndef UTILS_H
+#define UTILS_H
+
 void print_arr(int *arr, int len);
-#endif // !UTILS_H"
+void swapints(int *a, int *b);
+
+#endif
