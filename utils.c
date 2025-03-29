@@ -1,4 +1,8 @@
+#include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+char END[2] = "\0";
 
 void print_arr(int *arr, int len) {
 	int i;
@@ -20,3 +24,20 @@ void swapints(int *a, int *b) {
 void print_line_break() {
 	printf("-------------------------------------------------\n");
 };
+
+void printnclear() {
+	system("clear");
+	print_line_break();
+};
+
+int strsize(char *str) {
+	int i = 0;
+	while (str[i] != *END) {
+		i++;
+		if (i > INT_MAX) {
+			printf("Max allowed text size: %d\n", INT_MAX);
+			perror("ERROR: your text is too long!");
+		}
+	}
+	return i;
+}

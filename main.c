@@ -1,33 +1,45 @@
-#include "list_sorting.h"
-#include "utils.h"
-#include "working_with_files.h"
+#include "learning.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-	printf("sorting an array in C\n");
-	int myarr[7] = {7, 5, 6, 3, 4, 1, 2};
-	int myarr_size = sizeof(myarr) / sizeof(myarr[0]);
+	// printf("sorting an array in C\n");
+	// int myarr[7] = {7, 5, 6, 3, 4, 1, 2};
+	// int myarr_size = sizeof(myarr) / sizeof(myarr[0]);
+	//
+	// printf("before sort:");
+	// print_arr(myarr, myarr_size);
+	// printf("\n");
+	//
+	// quicksortarr(myarr, myarr_size);
+	//
+	// printf("after:");
+	// print_arr(myarr, myarr_size);
+	// printf("\n");
+	// print_line_break();
+	//
+	// open_read_print("input.txt");
+	//
+	// printnclear();
+	//
+	// system("git status");
+	//
+	// // void get_min_max_int_from_inputs();
+	// // get_min_max_int_from_inputs();
+	//
+	// // void simple_guess_game();
+	// // simple_guess_game();
+	//
+	// printnclear();
 
-	printf("before sort:");
-	print_arr(myarr, myarr_size);
-	printf("\n");
-
-	quicksortarr(myarr, myarr_size);
-
-	printf("after:");
-	print_arr(myarr, myarr_size);
-	printf("\n");
-	print_line_break();
-
-	open_read_print("input.txt");
-
-	printf("--------------");
-
-	void get_min_max_int_from_inputs();
-	get_min_max_int_from_inputs();
-
-	void simple_guess_game();
-	simple_guess_game();
+	char str1[] = "Hello world";
+	printf("Original: %s\n", str1);
+	reverse_strings(str1);
+	printf("Reversed: %s\n", str1);
+	char str2[] = "1234567890";
+	printf("Original: %s\n", str2);
+	reverse_strings(str2);
+	printf("Reversed: %s\n", str2);
 
 	return 0;
 };

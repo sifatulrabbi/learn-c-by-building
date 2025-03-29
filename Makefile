@@ -1,5 +1,5 @@
 run:
-	gcc -Wall *.c -o learnc.bin
+	gcc -Wall -Wextra *.c -o learnc.bin
 	./learnc.bin
 
 .PHONY: run
