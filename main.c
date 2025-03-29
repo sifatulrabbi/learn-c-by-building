@@ -32,14 +32,7 @@ int main() {
 	//
 	// printnclear();
 
-	char str1[] = "Hello world";
-	printf("Original: %s\n", str1);
-	reverse_strings(str1);
-	printf("Reversed: %s\n", str1);
-	char str2[] = "1234567890";
-	printf("Original: %s\n", str2);
-	reverse_strings(str2);
-	printf("Reversed: %s\n", str2);
+	test_reversing_strings();
 
 	return 0;
 };

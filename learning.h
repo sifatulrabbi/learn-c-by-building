@@ -9,5 +9,6 @@ void quicksortarr(int *arr, int len);
 void open_read_print(char *filename);
 void reverse_strings(char *str);
 int strsize(char *str);
+void test_reversing_strings();
 
 #endif
